@@ -84,6 +84,17 @@ procedure calculator_implementation is
 					SquareValue := CurrentValue * CurrentValue;
 					Put("The square value of the entered number is: " & SquareValue'img);
 					
+			-- Perform Square Root operation
+				when 6 =>
+					Ada.Text_IO.Put_Line("The following operation will find and output the square root of your desired value");
+					Ada.Text_IO.Put(Item => "In the form of sqrt(x), enter the value x which you wish to square root: ");
+					Ada.Float_Text_IO.get(Item => Value);
+					Answer := Ada.Numerics.Elementary_Functions.Sqrt(Value);
+					Ada.Text_IO.Put("The square root of your input is: ");
+					Ada.Float_Text_IO.Put (Item => Answer, Fore => 1, Aft => 5, Exp => 0);
+					Ada.Text_IO.New_Line;
+
+					
 			-- Perform Exponential operation
 				when 7 => 
 					Put("In the form of exponentiation, a^N. Enter the integer value, a: ");
@@ -99,11 +110,12 @@ procedure calculator_implementation is
 					Ada.Text_IO.Put_Line("The following operation will perform Log10.");
 					Ada.Text_IO.Put(Item => "In the form of lg(x), where the log base 10 of x will be found, enter the value x: ");
 					Ada.Float_Text_IO.get(Item => Value);
-					-- Put(Item => "The logarithmic result of your value is: " &Log'img);
 					Answer := Ada.Numerics.Elementary_Functions.Log(Value, 10.0);
 					Ada.Text_IO.Put("The logarithmic value of your input is: ");
-					Ada.Float_Text_IO.Put(Item => Answer);
+					Ada.Float_Text_IO.Put (Item => Answer, Fore => 1, Aft => 5, Exp => 0);
 					Ada.Text_IO.New_Line;
+					
+			
 									
 			-- Exit Program		
 				when 0 => 

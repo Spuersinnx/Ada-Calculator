@@ -1,0 +1,107 @@
+V "GNAT Lib v5"
+M P W=b
+P ZX
+
+RN
+RV NO_FLOATING_POINT
+RV NO_IO
+RV NO_IMPLEMENTATION_ATTRIBUTES
+RV SPARK_05
+
+U calculator_implementation%b  calculator_implementation.adb  854ae7ee NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.numerics%s	a-numeri.ads		a-numeri.ali
+W ada.numerics.elementary_functions%s  a-nuelfu.ads  a-nuelfu.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W system.concat_2%s	s-conca2.adb		s-conca2.ali
+W system.exp_int%s	s-expint.adb		s-expint.ali
+W system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20070406091342 3ffc8e18 ada%s
+D a-except.ads		20140730140058 5250cb69 ada.exceptions%s
+D a-flteio.ads		20070406091342 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20070406091342 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20140225151544 e4a01f64 ada.io_exceptions%s
+D a-numeri.ads		20080324174807 bb51c45a ada.numerics%s
+D a-nuelfu.ads		20070406091342 03e83d1c ada.numerics.elementary_functions%s
+D a-ngelfu.ads		20140731125134 b8fdcb46 ada.numerics.generic_elementary_functions%s
+D a-stream.ads		20141120112812 119b8fb3 ada.streams%s
+D a-tags.ads		20140730140058 dc4d0634 ada.tags%s
+D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
+D a-tiflio.ads		20140717063513 56fbda09 ada.text_io.float_io%s
+D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
+D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
+D calculator_implementation.adb  20160419021209 a90ee122 calculator_implementation%b
+D interfac.ads		20141120112812 6033a23f interfaces%s
+D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
+D system.ads		20141030114420 100301f7 system%s
+D s-conca2.ads		20140225151544 02a0d7d0 system.concat_2%s
+D s-crtl.ads		20141120112812 0ebbdb71 system.crtl%s
+D s-exctab.ads		20140225151139 54135002 system.exception_table%s
+D s-expint.ads		20140801083227 192336fc system.exp_int%s
+D s-ficobl.ads		20140718105747 078245e4 system.file_control_block%s
+D s-imgint.ads		20090409150019 02dbe0c2 system.img_int%s
+D s-parame.ads		20140801093848 7e2a0d7f system.parameters%s
+D s-soflin.ads		20140801100131 aa763b52 system.soft_links%s
+D s-stache.ads		20140225151139 a37c21ec system.stack_checking%s
+D s-stalib.ads		20150220094550 fa0a3617 system.standard_library%s
+D s-stoele.ads		20140225151139 2dc34a04 system.storage_elements%s
+D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
+D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
+X 1 ada.ads
+16K9*Ada 19e8 15|1r6 1r19 1r40 2r6 3r5 3r18 89r41 90r41 91r41 92r51 93r41
+. 94r41 95r41 110r41 111r41 112r41 113r51 114r41 115r41 116r41
+X 3 a-flteio.ads
+20K13*Float_Text_IO[12|46] 15|1w44 91r45 94r45 112r45 115r45
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[13|46] 15|1w23 3r22
+X 6 a-numeri.ads
+16K13*Numerics 32e17 15|2r10 92r55 113r55
+X 7 a-nuelfu.ads
+18K22*Elementary_Functions[8|39] 15|2w19 92r64 113r64
+X 8 a-ngelfu.ads
+42V13*Sqrt{float} 15|92s85[7|18]
+68V13*Log{float} 15|113s85[7|18]
+X 11 a-textio.ads
+49K13*Text_IO 471e16 15|1w10 3r9 89r45 90r45 93r45 95r45 110r45 111r45 114r45
+. 116r45
+73I12*Field{integer}
+166U14*New_Line 15|22s25 25s25 38s25 43s25 47s25 49s25 56s41 95s53 106s41
+. 116s53
+242U14*Put 15|44s25 59s41 66s41 72s41 78s41 82s41 85s41 90s53 93s53 100s41
+. 102s41 105s41 111s53 114s53 126s41
+242a19 Item{string} 15|66r45 78r45 90r57 111r57
+263U14*Put_Line 15|21s25 23s25 28s25 29s25 30s25 31s25 32s25 33s25 34s25
+. 35s25 36s25 48s25 54s41 89s53 110s53 122s41
+X 12 a-tiflio.ads
+57U14*Get 15|91s59[3|20] 112s59[3|20]
+58f7 Item{float} 15|91r63[3|20] 112r63[3|20]
+68U14*Put 15|94s59[3|20] 115s59[3|20]
+69f7 Item{float} 15|94r64[3|20] 115r64[3|20]
+70i7 Fore{11|73I12} 15|94r80[3|20] 115r80[3|20]
+71i7 Aft{11|73I12} 15|94r91[3|20] 115r91[3|20]
+72i7 Exp{11|73I12} 15|94r101[3|20] 115r101[3|20]
+X 13 a-tiinio.ads
+56U14*Get 15|45s25[4|18] 55s41[4|18] 62s49[4|18] 74s49[4|18] 83s41[4|18]
+. 101s41[4|18] 103s41[4|18]
+57i7 Item{integer} 15|55r45[4|18] 62r54[4|18] 74r54[4|18] 83r46[4|18] 101r45[4|18]
+. 103r46[4|18]
+X 15 calculator_implementation.adb
+5U11*calculator_implementation 5b11 134l5 134t30
+7i9 Option{integer} 45m29 48r64 52r30 129r35
+8i9 Sum{integer} 58m41 63m49 63r56 66r85 71m41 75m49 75r70 78r100
+9i9 CurrentValue{integer} 62m62 63r62 74m62 75r55 83m54 84r56 84r71 101m53
+. 104r53
+10i9 SquareValue{integer} 84m41 85r93
+11i9 Power{integer} 103m54 104r69
+12i9 Exponent{integer} 104m41 105r77
+13i9 NumberValues{natural} 55m53 61r59
+15F17 NonNegFloat{float} 16r17 17r18
+16f9 Value{15F17} 91m71 92r90 112m71 113r89
+17f9 Answer{15F17} 92m41 94r72 113m41 115r72
+61i45 Count{integer}
+73i45 Count{integer}
+
