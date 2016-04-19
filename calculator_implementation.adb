@@ -29,13 +29,14 @@ procedure calculator_implementation is
 			
 			-- Menu with operation choices
 			Put_Line("1. Addition of Multiple Integers ");
-			Put_Line("2. Subtraction of 2 Integers");
-			Put_Line("3. Multiplication");
-			Put_Line("4. Division");
-			Put_Line("5. Squaring ");
-			Put_Line("6. Square Root");
-			Put_Line("7. Exponential");
-			Put_Line("8. Logarithmics");
+			Put_Line("2. Addition of 2 Numbers ");
+			Put_Line("3. Subtraction of 2 Numbers");
+			Put_Line("4. Multiplication");
+			Put_Line("5. Division");
+			Put_Line("6. Squaring ");
+			Put_Line("7. Square Root");
+			Put_Line("8. Exponential");
+			Put_Line("9. Logarithmics");
 			Put_Line("0. Exit Program");
 			
 			New_Line;
@@ -54,7 +55,7 @@ procedure calculator_implementation is
 			-- Performing the addition operation
 			case Option is
 				when 1  =>
-					Put_Line("Enter the total count of integers to be summed: ");
+					Put("Enter the total count of integers to be summed: ");
 					get(Item => NumberValues);
 					New_Line(1);
 
@@ -69,22 +70,36 @@ procedure calculator_implementation is
 
 					Put(Item => "The Sum of your values is: " & Sum'img);
 					
-			-- Performing Subtraction operation
-				when 2 => 
-
-					Sum := 0;
-					Put("Enter the integer values to be subtracted, separated by a space: ");
+			-- Performing addition of 2 floats
+				when 2 =>
+					Ada.Text_IO.Put(Item => "In the form of a + b, enter the value a: ");
+					Ada.Float_Text_IO.get(Item => Value_A);
+					Ada.Text_IO.Put(Item => "Now, enter the value b: ");
+					Ada.Float_Text_IO.get(Item => Value_B);
+					Answer_B := Value_A + Value_B;
 					
-					--subtracts 2 values 
-					for Count in 1 .. 2 loop
-						get (Item => CurrentValue);
-						Sum:= CurrentValue - Sum;
-   					end loop;
+						
+					Ada.Text_IO.Put("The result of your addition is: ");
+					Ada.Float_Text_IO.Put (Item => Answer_B, Fore => 1, Aft => 4, Exp => 0);
+					Ada.Text_IO.New_Line;
+					
+			-- Performing Subtraction operation
+				when 3 => 
 
-					Put(Item => "The result of subtracting your values is: " & Sum'img);
+					Ada.Text_IO.Put(Item => "In the form of b - a, enter the value b: ");
+					Ada.Float_Text_IO.get(Item => Value_B);
+					Ada.Text_IO.Put(Item => "Now, enter the value a: ");
+					Ada.Float_Text_IO.get(Item => Value_A);
+					Answer_B := Value_B - Value_A;
+					
+						
+					Ada.Text_IO.Put("The result of your subtraction is: ");
+					Ada.Float_Text_IO.Put (Item => Answer_B, Fore => 1, Aft => 4, Exp => 0);
+					Ada.Text_IO.New_Line;
+
 					
 			-- Performing Multiplication Operation
-				when 3 =>
+				when 4 =>
 					
 					Ada.Text_IO.Put(Item => "In the form of a x b, enter the value a: ");
 					Ada.Float_Text_IO.get(Item => Value_A);
@@ -95,11 +110,11 @@ procedure calculator_implementation is
 						
 					Ada.Text_IO.Put("The result of your multiplication is: ");
 					Ada.Float_Text_IO.Put (Item => Answer_B, Fore => 1, Aft => 4, Exp => 0);
-			
+					Ada.Text_IO.New_Line;
 
 					
 			-- Performing Division Operation
-				when 4 =>
+				when 5 =>
 					Ada.Text_IO.Put(Item => "In the form of b / a, enter the the value b: ");
 					Ada.Float_Text_IO.get(Item => Value_B);
 					Ada.Text_IO.Put(Item => "In the form of b / a, enter the the value a: ");
@@ -110,10 +125,11 @@ procedure calculator_implementation is
 					
 					-- formats decimal output with 4 decimal point
 					Ada.Float_Text_IO.Put (Item => Answer_B, Fore => 1, Aft => 4, Exp => 0);
+					Ada.Text_IO.New_Line;
 
 					
 			-- Performing Square Operation
-				when 5 =>
+				when 6 =>
 					Put("Enter the value to be squared: ");
 					get (Item => CurrentValue);
 					SquareValue := CurrentValue * CurrentValue;
@@ -121,7 +137,7 @@ procedure calculator_implementation is
 					
 					
 			-- Performing Square Root operation
-				when 6 =>
+				when 7 =>
 					Ada.Text_IO.Put_Line("The following operation will find and output the square root of your desired value");
 					Ada.Text_IO.Put(Item => "In the form of sqrt(x), enter the value x which you wish to square root: ");
 					Ada.Float_Text_IO.get(Item => Value);
@@ -132,7 +148,7 @@ procedure calculator_implementation is
 
 					
 			-- Performing Exponential operation
-				when 7 => 
+				when 8 =>
 					Put("In the form of exponentiation, a^N. Enter the integer value, a: ");
 					get(Item => CurrentValue);
 					Put("In the form of exponentation, a^N. Enter the integer value, N: ");
@@ -145,7 +161,7 @@ procedure calculator_implementation is
 					
 					
 			-- Perfoming Log operation
-				when 8 =>
+				when 9 =>
 					Ada.Text_IO.Put_Line("The following operation will perform Log10.");
 					Ada.Text_IO.Put(Item => "In the form of lg(x), where the log base 10 of x will be found, enter the value x: ");
 					Ada.Float_Text_IO.get(Item => Value);
@@ -158,11 +174,11 @@ procedure calculator_implementation is
 					
 						
 			-- Exit Program		
-				when 0 => 
+				when 0 =>
 					Put_Line("Goodbye!");
 					
 			-- Validate Menu Choice	
-				when others => 
+				when others =>
 					Put("I'm sorry, you have entered an invalid menu choice. Please enter your selection again: ");
 					
 			end case;
