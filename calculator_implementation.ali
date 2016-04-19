@@ -8,7 +8,7 @@ RV NO_IO
 RV NO_IMPLEMENTATION_ATTRIBUTES
 RV SPARK_05
 
-U calculator_implementation%b  calculator_implementation.adb  854ae7ee NE OO SU IL
+U calculator_implementation%b  calculator_implementation.adb  7d37eff0 NE OO SU IL
 W ada%s			ada.ads			ada.ali
 W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
 W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
@@ -33,7 +33,7 @@ D a-textio.ads		20140717063745 386df5d4 ada.text_io%s
 D a-tiflio.ads		20140717063513 56fbda09 ada.text_io.float_io%s
 D a-tiinio.ads		20140717063513 aa04e5d6 ada.text_io.integer_io%s
 D a-unccon.ads		20070406091342 f9eb8f06 ada.unchecked_conversion%s
-D calculator_implementation.adb  20160419021209 a90ee122 calculator_implementation%b
+D calculator_implementation.adb  20160419145404 5173e93c calculator_implementation%b
 D interfac.ads		20141120112812 6033a23f interfaces%s
 D i-cstrea.ads		20140801100435 e53d8b8e interfaces.c_streams%s
 D system.ads		20141030114420 100301f7 system%s
@@ -52,56 +52,62 @@ D s-traent.ads		20140730135025 005bf670 system.traceback_entries%s
 D s-unstyp.ads		20140731130224 9d58a4c0 system.unsigned_types%s
 D s-wchcon.ads		20140718092328 1b7d22d2 system.wch_con%s
 X 1 ada.ads
-16K9*Ada 19e8 15|1r6 1r19 1r40 2r6 3r5 3r18 89r41 90r41 91r41 92r51 93r41
-. 94r41 95r41 110r41 111r41 112r41 113r51 114r41 115r41 116r41
+16K9*Ada 19e8 15|1r6 1r19 1r40 2r6 3r5 3r18 91r41 94r49 98r41 99r41 105r41
+. 106r41 107r41 108r41 110r41 111r41 124r41 125r41 126r41 127r51 128r41 129r41
+. 130r41 145r41 146r41 147r41 148r51 149r41 150r41 151r41
 X 3 a-flteio.ads
-20K13*Float_Text_IO[12|46] 15|1w44 91r45 94r45 112r45 115r45
+20K13*Float_Text_IO[12|46] 15|1w44 94r53 99r45 106r45 108r45 111r45 126r45
+. 129r45 147r45 150r45
 X 4 a-inteio.ads
 18K13*Integer_Text_IO[13|46] 15|1w23 3r22
 X 6 a-numeri.ads
-16K13*Numerics 32e17 15|2r10 92r55 113r55
+16K13*Numerics 32e17 15|2r10 127r55 148r55
 X 7 a-nuelfu.ads
-18K22*Elementary_Functions[8|39] 15|2w19 92r64 113r64
+18K22*Elementary_Functions[8|39] 15|2w19 127r64 148r64
 X 8 a-ngelfu.ads
-42V13*Sqrt{float} 15|92s85[7|18]
-68V13*Log{float} 15|113s85[7|18]
+42V13*Sqrt{float} 15|127s85[7|18]
+68V13*Log{float} 15|148s85[7|18]
 X 11 a-textio.ads
-49K13*Text_IO 471e16 15|1w10 3r9 89r45 90r45 93r45 95r45 110r45 111r45 114r45
-. 116r45
+49K13*Text_IO 471e16 15|1w10 3r9 91r45 98r45 105r45 107r45 110r45 124r45
+. 125r45 128r45 130r45 145r45 146r45 149r45 151r45
 73I12*Field{integer}
-166U14*New_Line 15|22s25 25s25 38s25 43s25 47s25 49s25 56s41 95s53 106s41
-. 116s53
-242U14*Put 15|44s25 59s41 66s41 72s41 78s41 82s41 85s41 90s53 93s53 100s41
-. 102s41 105s41 111s53 114s53 126s41
-242a19 Item{string} 15|66r45 78r45 90r57 111r57
-263U14*Put_Line 15|21s25 23s25 28s25 29s25 30s25 31s25 32s25 33s25 34s25
-. 35s25 36s25 48s25 54s41 89s53 110s53 122s41
+166U14*New_Line 15|25s25 28s25 41s25 46s25 50s25 52s25 59s41 87s41 130s53
+. 141s41 151s53
+242U14*Put 15|47s25 62s41 69s41 75s41 81s41 91s53 98s53 105s53 107s53 110s53
+. 117s41 120s41 125s53 128s53 135s41 137s41 140s41 146s53 149s53 161s41
+242a19 Item{string} 15|69r45 81r45 91r57 105r57 107r57 125r57 146r57
+263U14*Put_Line 15|24s25 26s25 31s25 32s25 33s25 34s25 35s25 36s25 37s25
+. 38s25 39s25 51s25 57s41 85s41 124s53 145s53 157s41
 X 12 a-tiflio.ads
-57U14*Get 15|91s59[3|20] 112s59[3|20]
-58f7 Item{float} 15|91r63[3|20] 112r63[3|20]
-68U14*Put 15|94s59[3|20] 115s59[3|20]
-69f7 Item{float} 15|94r64[3|20] 115r64[3|20]
-70i7 Fore{11|73I12} 15|94r80[3|20] 115r80[3|20]
-71i7 Aft{11|73I12} 15|94r91[3|20] 115r91[3|20]
-72i7 Exp{11|73I12} 15|94r101[3|20] 115r101[3|20]
+57U14*Get 15|94s67[3|20] 106s59[3|20] 108s59[3|20] 126s59[3|20] 147s59[3|20]
+58f7 Item{float} 15|94r71[3|20] 106r63[3|20] 108r63[3|20] 126r63[3|20] 147r63[3|20]
+68U14*Put 15|99s59[3|20] 111s59[3|20] 129s59[3|20] 150s59[3|20]
+69f7 Item{float} 15|99r64[3|20] 111r64[3|20] 129r64[3|20] 150r64[3|20]
+70i7 Fore{11|73I12} 15|99r82[3|20] 111r82[3|20] 129r80[3|20] 150r80[3|20]
+71i7 Aft{11|73I12} 15|99r93[3|20] 111r93[3|20] 129r91[3|20] 150r91[3|20]
+72i7 Exp{11|73I12} 15|99r103[3|20] 111r103[3|20] 129r101[3|20] 150r101[3|20]
 X 13 a-tiinio.ads
-56U14*Get 15|45s25[4|18] 55s41[4|18] 62s49[4|18] 74s49[4|18] 83s41[4|18]
-. 101s41[4|18] 103s41[4|18]
-57i7 Item{integer} 15|55r45[4|18] 62r54[4|18] 74r54[4|18] 83r46[4|18] 101r45[4|18]
-. 103r46[4|18]
+56U14*Get 15|48s25[4|18] 58s41[4|18] 65s49[4|18] 77s49[4|18] 86s41[4|18]
+. 118s41[4|18] 136s41[4|18] 138s41[4|18]
+57i7 Item{integer} 15|58r45[4|18] 65r54[4|18] 77r54[4|18] 86r45[4|18] 118r46[4|18]
+. 136r45[4|18] 138r46[4|18]
 X 15 calculator_implementation.adb
-5U11*calculator_implementation 5b11 134l5 134t30
-7i9 Option{integer} 45m29 48r64 52r30 129r35
-8i9 Sum{integer} 58m41 63m49 63r56 66r85 71m41 75m49 75r70 78r100
-9i9 CurrentValue{integer} 62m62 63r62 74m62 75r55 83m54 84r56 84r71 101m53
-. 104r53
-10i9 SquareValue{integer} 84m41 85r93
-11i9 Power{integer} 103m54 104r69
-12i9 Exponent{integer} 104m41 105r77
-13i9 NumberValues{natural} 55m53 61r59
-15F17 NonNegFloat{float} 16r17 17r18
-16f9 Value{15F17} 91m71 92r90 112m71 113r89
-17f9 Answer{15F17} 92m41 94r72 113m41 115r72
-61i45 Count{integer}
-73i45 Count{integer}
+5U11*calculator_implementation 5b11 169l5 169t30
+7i9 Option{integer} 48m29 51r64 55r30 164r35
+8i9 Sum{integer} 61m41 66m49 66r56 69r85 74m41 78m49 78r70 81r100
+9i9 CurrentValue{integer} 65m62 66r62 77m62 78r55 118m54 119r56 119r71 136m53
+. 139r53
+10i9 SquareValue{integer} 119m41 120r93
+11i9 Power{integer} 138m54 139r69
+12i9 Exponent{integer} 139m41 140r77
+13i9 NumberValues{natural} 58m53 64r59 86m53 93r59
+14f9 Value_A{float} 94m79 95r72 108m71 109r63
+15f9 Value_B{float} 106m71 109r53
+16f9 Answer_B{float} 89m41 95m49 95r61 99r72 109m41 111r72
+18F17 NonNegFloat{float} 19r17 20r18
+19f9 Value{18F17} 126m71 127r90 147m71 148r89
+20f9 Answer{18F17} 127m41 129r72 148m41 150r72
+64i45 Count{integer}
+76i45 Count{integer}
+93i45 Count{integer}
 
